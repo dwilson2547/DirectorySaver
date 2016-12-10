@@ -27,6 +27,14 @@ namespace DirectorySaver
             this.isOpen = false;
             this.level = 0;
         }
+        public Dir(DirectoryInfo _direcotryInfo, int _level)
+        {
+            this.directoryInfo = _direcotryInfo;
+            this.FullName = _direcotryInfo.FullName;
+            this.Name = _direcotryInfo.Name;
+            this.isOpen = false;
+            this.level = _level;
+        }
     }
     public partial class Form1 : Form
     {
@@ -66,15 +74,17 @@ namespace DirectorySaver
                 lstDirectoriesAndFiles.Items.Add(fbd.SelectedPath.ToString()); 
             }
 
-            DirectoryInfo dir = new DirectoryInfo(fbd.SelectedPath.ToString());
-            DirectoryInfo[] subdDir = dir.GetDirectories();
+            Dir directory = new Dir(new DirectoryInfo(fbd.SelectedPath.ToString()));
+            DirectoryInfo[] dirInfo = directory.directoryInfo.GetDirectories();
 
-            foreach (DirectoryInfo info in subdDir)
+            foreach (DirectoryInfo info in dirInfo)
             {
-                lstDirectoriesAndFiles.Items.Add(info);
+                Dir temp = new Dir(info);
+                lstDirectoriesAndFiles.Items.Add(temp);
             }
-            FileInfo[] fi = dir.GetFiles();
-            foreach (FileInfo info in fi)
+
+            FileInfo[] fileInfo = directory.directoryInfo.GetFiles();
+            foreach (FileInfo info in fileInfo)
             {
                 lstDirectoriesAndFiles.Items.Add(info);
             }
@@ -85,16 +95,16 @@ namespace DirectorySaver
             if (lstDirectoriesAndFiles.Items[lstDirectoriesAndFiles.SelectedIndex].GetType() == typeof(FileInfo))
                 return;
 
-            DirectoryInfo dir = (DirectoryInfo)lstDirectoriesAndFiles.Items[lstDirectoriesAndFiles.SelectedIndex];
-            DirectoryInfo[] subDir = dir.GetDirectories();
+            Dir dir = (Dir)lstDirectoriesAndFiles.Items[lstDirectoriesAndFiles.SelectedIndex];
+            DirectoryInfo[] subDir = dir.directoryInfo.GetDirectories();
             int count = 0;
             int startPos = lstDirectoriesAndFiles.SelectedIndex; 
             for (int i = startPos + 1; i < startPos + subDir.Count() + 1; i++)
             {
-                lstDirectoriesAndFiles.Items.Insert(i, subDir[count]);
+                lstDirectoriesAndFiles.Items.Insert(i, new Dir(subDir[count], dir.level + 1));
                 count++; 
             }
-            FileInfo[] fi = dir.GetFiles();
+            FileInfo[] fi = dir.directoryInfo.GetFiles();
             int newStart = startPos + subDir.Count();
             int newCount = 0;  
             for (int i = newStart + 1; i < newStart + fi.Count() + 1; i++)
