@@ -1,0 +1,20 @@
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.exe.config
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.exe
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.pdb
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.csprojResolveAssemblyReference.cache
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.Properties.Resources.resources
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.csproj.GenerateResource.Cache
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.exe
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.pdb
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.About.resources
+c:\users\daniel\documents\visual studio 2015\Projects\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.Dir.resources
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.exe.config
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.exe
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.pdb
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.About.resources
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.Dir.resources
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.Properties.Resources.resources
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\obj\Debug\DirectorySaver.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.exe
+C:\Users\Daniel\Documents\GitHub\DirectorySaver\DirectorySaver\DirectorySaver\bin\Debug\DirectorySaver.pdb
